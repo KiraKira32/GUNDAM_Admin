@@ -1,0 +1,32 @@
+// Dashbord 樣式
+
+.admin-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* 設定高度 */
+}
+
+.sidebar {
+  flex: 0 0 auto;
+  height: 100%; /* 讓 sidebar 的高度填滿 wrapper */
+}
+
+.admin-main-block {
+  flex: 1 1 auto;
+  overflow-y: auto; /* 設定 content 為可滾動 */
+}
+
+// VueLoadgin 置中
+
+  .page-container{
+    position: relative;
+  }
+  
+  .page-container .vld-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+  }
