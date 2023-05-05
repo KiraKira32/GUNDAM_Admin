@@ -2,7 +2,7 @@
   <div class="container d-flex justify-content-center align-items-center vh-100">
       <div class="login">
         <div class="d-flex justify-content-center">
-          <img class="img-logo my-3" src="../assets/logo_icon.png" alt="" />
+          <img class="img-logo" src="../assets/logo_icon.png" alt="" />
         </div>
         <div class="form-block">
           <h3 class="text-center py-4 font-weight-normal">管理員登入</h3>
@@ -96,15 +96,9 @@ export default {
 
 <style>
 
-body {
-  background: #E8E8E8;
-}
 .form-block {
   background: white;
 }
-/* .img-logo {
-  width: 0%;
-} */
 
 .form-block {
   width: 450px;
