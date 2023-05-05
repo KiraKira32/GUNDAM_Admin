@@ -2,7 +2,7 @@
   <div class="container container-block d-flex justify-content-center align-items-center vh-100">
       <div class="login">
         <div class="d-flex justify-content-center">
-          <img class="img-logo" src="../assets/logo_icon.png" alt="" />
+          <img class="img-logo-icon" src="../assets/logo_icon.png" alt="" />
         </div>
         <div class="form-block">
           <h3 class="text-center py-4 font-weight-normal">管理員登入</h3>
