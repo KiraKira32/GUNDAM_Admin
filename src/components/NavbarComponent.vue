@@ -6,7 +6,7 @@
     </div>
     <hr />
     <ul class="nav nav-pills flex-column mb-auto">
-      <li class="nav-item"  >
+      <li class="nav-item">
         <router-link to="/admin/products" class="nav-link text-white mt-2 d-flex align-items-center"
         :class="{ active: $route.path === '/admin/products' }">
           <svg
@@ -128,9 +128,7 @@ div p {
 }
 
 .img-logo {
-  width: 100%;
-  /* border-radius: 5px;
-  background: #fff; */
+  width: 85%;
 }
 .sidebar {
   height: 100vh;

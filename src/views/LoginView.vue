@@ -1,5 +1,5 @@
 <template>
-  <div class="container d-flex justify-content-center align-items-center vh-100">
+  <div class="container container-block d-flex justify-content-center align-items-center vh-100">
       <div class="login">
         <div class="d-flex justify-content-center">
           <img class="img-logo" src="../assets/logo_icon.png" alt="" />
