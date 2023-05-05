@@ -65,9 +65,9 @@
         </router-link>
       </li>
       <hr>
+      <!-- 返回前台  -->
       <li class="nav-item">
-        <router-link to="/admin/products" class="nav-link text-white d-flex align-items-center"
-        :class="{ active: $route.path === '/admin/' }">
+        <a class="text-white d-flex front px-3" href="https://kirakira32.github.io/GUNDAM/#/">
           <svg
             class="me-2"
             xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@
             />
           </svg>
           返回前台
-        </router-link>
+        </a>
       </li>
     </ul>
     <div class="justify-content-start align-items-center">
@@ -125,6 +125,10 @@ export default {
 <style>
 div p {
   margin: 0;
+}
+
+.front {
+  text-decoration: none;
 }
 
 .img-logo {
