@@ -1,7 +1,8 @@
 <template>
   <div class="navmenu d-flex flex-column p-3 text-white bg-dark sidebar ali vh-100" style="width: 280px">
     <div class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-      <span class="fs-4 j">鋼彈GUNDAM</span>
+      <!-- <span class="fs-4 j">鋼彈GUNDAM</span> -->
+      <img class="img-logo" src="../assets/LOGO.png" alt="">
     </div>
     <hr />
     <ul class="nav nav-pills flex-column mb-auto">
@@ -124,6 +125,12 @@ export default {
 <style>
 div p {
   margin: 0;
+}
+
+.img-logo {
+  width: 100%;
+  /* border-radius: 5px;
+  background: #fff; */
 }
 .sidebar {
   height: 100vh;
