@@ -46,7 +46,7 @@
                   </tr>
                   <tr>
                     <th>留言</th>
-                    <td>{{ tempOrder.user.messge }}</td>
+                    <td>{{ tempOrder.message }}</td>
                   </tr>
                 </tbody>
               </table>
