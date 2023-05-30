@@ -122,7 +122,7 @@ export default {
           this.isLoading = false
         })
         .catch((err) => {
-          console.log(err);
+          alert(err)
         })
     },
     updateCoupon () {

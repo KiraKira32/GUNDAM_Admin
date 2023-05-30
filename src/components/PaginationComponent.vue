@@ -43,12 +43,6 @@
   </div>
 </template>
 
-<!-- <script>
-export default {
-  props: ['pages', 'getProducts']
-}
-</script> -->
-
 <script>
 export default {
   // :pages="{ 頁碼資訊 }"

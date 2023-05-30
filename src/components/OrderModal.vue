@@ -34,7 +34,7 @@
                   </tr>
                   <tr>
                     <th>Email</th>
-                    <td>{{ tempOrder.user.name }}</td>
+                    <td>{{ tempOrder.user.email }}</td>
                   </tr>
                   <tr>
                     <th>電話</th>
@@ -82,7 +82,7 @@
                   </tr>
                   <tr>
                     <th>訂單總金額</th>
-                    <td>{{ $filters.currency(tempOrder.total) }}</td>
+                    <td>NT$ {{ $filters.currency(tempOrder.total) }}</td>
                   </tr>
                 </tbody>
               </table>
