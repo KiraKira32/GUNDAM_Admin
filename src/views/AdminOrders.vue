@@ -28,7 +28,7 @@
             <tr>
               <td>{{ $moment(new Date (order.create_at * 1000)).format('YYYY-MM-DD HH:mm') }}</td>
               <td><span v-if="order.user" v-text="order.user.email"></span></td>
-              <td>
+              <td style="font-size: 15px;">
                 <ul class="list-unstyled">
                   <li v-for="(product, i) in order.products" :key="i">
                     {{ product.product.title }} 數量：{{ product.qty }}
@@ -36,7 +36,7 @@
                   </li>
                 </ul>
               </td>
-              <td class="text-right"> {{$filters.currency(order.total) }} </td>
+              <td class="text-right" style="font-size: 15px;"> NT$ {{$filters.currency(order.total) }} </td>
               <td>
                 <input
                   class="form-check-input me-1"
@@ -47,8 +47,8 @@
                   
                 />
                 <label class="form-check-label" :for="order.id">
-                  <span v-if="order.is_paid" class="text-primary fw-bolder">已付款</span>
-                  <span v-else class="text-muted">未付款</span>
+                  <span v-if="order.is_paid" class="text-primary fw-bolder" style="font-size: 15px;">已付款</span>
+                  <span v-else class="text-muted" style="font-size: 15px;">未付款</span>
                 </label>
               </td>
               <td>
@@ -84,6 +84,10 @@
 
 <style lang="scss">
   @import "@/assets/_admin.scss";
+  
+  .order-text {
+    font-size: 10px;
+  }
 </style>
 
 

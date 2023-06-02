@@ -138,6 +138,7 @@
                 <div class="mb-3">
                   <label for="description" class="form-label">產品描述</label>
                   <textarea
+                    v-model="tempProduct.description"
                     id="description"
                     type="text"
                     class="form-control"
@@ -147,6 +148,7 @@
                 <div class="mb-3">
                   <label for="content" class="form-label">說明內容</label>
                   <textarea
+                    v-model="tempProduct.content"
                     id="content"
                     type="text"
                     class="form-control"
@@ -173,7 +175,13 @@
             <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
               取消
             </button>
-            <button type="button" class="btn btn-danger" @click="$emit('update-product', tempProduct)">確認</button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              @click="$emit('update-product', tempProduct)"
+            >
+              確認
+            </button>
           </div>
         </div>
       </div>
@@ -186,9 +194,9 @@ export default {
   props: ['tempProduct', 'isNew'],
   data() {
     return {
-      product: {},
+      product: {}
     }
   },
-  emits: ['update-product'],
+  emits: ['update-product']
 }
 </script>

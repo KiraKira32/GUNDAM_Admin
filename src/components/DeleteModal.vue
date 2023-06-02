@@ -21,8 +21,11 @@
           ></button>
         </div>
         <div class="modal-body">
-          <div class="mb-2">
+          <div v-if="item.title" class="mb-2">
             請確定是否要刪除：
+          </div>
+          <div v-else class="mb-2">
+            請確定是否要<span class="text-danger fw-bold">刪除</span>該筆訂單？
           </div>
           <strong class="text-danger">{{ item.title }}</strong>
           <div>

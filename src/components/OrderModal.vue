@@ -45,7 +45,7 @@
                     <td>{{ tempOrder.user.address }}</td>
                   </tr>
                   <tr>
-                    <th>留言</th>
+                    <th>備註</th>
                     <td>{{ tempOrder.message }}</td>
                   </tr>
                 </tbody>
@@ -77,7 +77,7 @@
                     <th>付款狀態</th>
                     <td>
                       <strong v-if="tempOrder.is_paid" class="text-success">已付款</strong>
-                      <span v-else class="text-muted">尚未付款</span>
+                      <span v-else class="text-danger">尚未付款</span>
                     </td>
                   </tr>
                   <tr>
@@ -96,8 +96,8 @@
                   <tr v-for="item in tempOrder.products" :key="item.id">
                     <th>{{ item.product.title }}</th>
                     <td>{{ item.qty }} {{ item.product.unit }}</td>
-                    <td class="text-end">
-                      {{ $filters.currency(item.final_total) }}
+                    <td class="text-end mx-2">
+                      NT$ {{ $filters.currency(item.final_total) }}
                     </td>
                   </tr>
                 </tbody>
