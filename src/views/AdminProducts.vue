@@ -12,14 +12,14 @@
         </button>
         
       </div>
-      <table class="table mt-3">
+      <table class="table mt-3 align-middle">
         <thead>
           <tr class="table-block text-white" style="background: #282828;">
-            <th width="120">類別</th>
+            <th width="100">類別</th>
             <th>商品名稱</th>
-              <th width="120">原價</th>
-              <th width="120">售價</th>
-              <th width="120">商品狀態</th>
+              <th width="100">原價</th>
+              <th width="100">售價</th>
+              <th width="100">商品狀態</th>
               <th width="120">編輯</th>
           </tr>
         </thead>
