@@ -18,8 +18,8 @@
             <th width="100">類別</th>
             <th>商品名稱</th>
               <th width="100">原價</th>
-              <th width="100">售價</th>
-              <th width="100">商品狀態</th>
+              <th width="">售價</th>
+              <th width="90">商品狀態</th>
               <th width="120">編輯</th>
           </tr>
         </thead>
