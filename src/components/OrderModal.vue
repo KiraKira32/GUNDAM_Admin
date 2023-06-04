@@ -94,9 +94,9 @@
                 </thead>
                 <tbody>
                   <tr v-for="item in tempOrder.products" :key="item.id">
-                    <th>{{ item.product.title }}</th>
-                    <td width="50">{{ item.qty }} {{ item.product.unit }}</td>
-                    <td width="100" class="text-end mx-2">
+                    <th style="font-size: 15px;">{{ item.product.title }}</th>
+                    <td width="60" style="font-size: 15px;">{{ item.qty }} {{ item.product.unit }}</td>
+                    <td width="100" class="text-end mx-2" style="font-size: 15px;">
                       NT$ {{ $filters.currency(item.final_total) }}
                     </td>
                   </tr>

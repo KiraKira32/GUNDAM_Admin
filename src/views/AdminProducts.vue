@@ -18,7 +18,7 @@
             <th width="100">類別</th>
             <th>商品名稱</th>
               <th width="100">原價</th>
-              <th width="">售價</th>
+              <th width="100">售價</th>
               <th width="90">商品狀態</th>
               <th width="120">編輯</th>
           </tr>
@@ -27,8 +27,8 @@
           <tr v-for="item in products" :key="item.id">
             <td>{{ item.category }}</td>
             <td>{{ item.title }}</td>
-            <td class="text-secondary">NT$ {{ $filters.currency(item.origin_price) }}</td>
-            <td class="fw-bolder">NT$ {{ $filters.currency(item.price) }}</td>
+            <td class="text-secondary">NT${{ $filters.currency(item.origin_price) }}</td>
+            <td class="fw-bolder">NT${{ $filters.currency(item.price) }}</td>
             <td>
               <span v-if="item.is_enabled" class="text-success">啟用</span>
               <span v-else>未啟用</span>
