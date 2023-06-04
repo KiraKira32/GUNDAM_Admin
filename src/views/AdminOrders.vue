@@ -9,10 +9,10 @@
           <p class="text-center mx-3">刪除全部訂單</p>
         </button>
       </div>
-      <table class="table mt-3 align-middle">
+      <table class="table mt-3">
         <thead>
           <tr class="table-block text-white" style="background: #282828">
-            <th width="100">訂單日期</th>
+            <th width="120">訂單日期</th>
             <th width="120">E-mail</th>
             <th>商品資訊</th>
             <th width="90">金額</th>
@@ -20,7 +20,7 @@
             <th width="110">編輯</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody >
           <template v-for="order in orders" :key="order.id">
             <tr>
               <td class="order-text-content">
@@ -91,9 +91,9 @@
 <style lang="scss">
 @import '@/assets/_admin.scss';
 
-.order-text-content {
-  font-size: 14px;
-}
+// .order-text-content {
+//   font-size: 14px;
+// }
 </style>
 
 <script>
@@ -138,7 +138,7 @@ export default {
           this.isLoading = false
         })
         .catch((err) => {
-          console.log(err)
+          alert(err)
         })
     },
     openModal(status, order) {
